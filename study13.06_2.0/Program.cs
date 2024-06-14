@@ -26,6 +26,7 @@ namespace study13._06_2._0
 
 
 
+
         }
         //FAZER :
         // para fazer o cálculo da mediana, precisamos ordenar os valores do array
@@ -33,8 +34,12 @@ namespace study13._06_2._0
         {
             double[] numerosOrdenados = (double[])array.Clone();
             int tamanho = numerosOrdenados.Length;
-            int mrio = tamanho / 2;
+            int meio = tamanho / 2;
+            double mediana = (tamanho % 2 != 0) ? numerosOrdenados[meio] :
+               (numerosOrdenados[meio] + numerosOrdenados[meio - 1]) / 2;
 
+            Console.WriteLine($"Com base na amostra a mediana = {mediana}");
+            
         }
     }
 }
