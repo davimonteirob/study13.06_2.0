@@ -31,32 +31,10 @@ namespace study13._06_2._0
         // para fazer o cálculo da mediana, precisamos ordenar os valores do array
         private static void CalculaMediana(Array array)
         {
-            if ((array == null) || (array.Length == 0))
-            {
-                Console.WriteLine("O array é nullo");
-            }
-            //para ordenar, vamos criar um array reserva
-            Array.Sort(array);
+            double[] numerosOrdenados = (double[])array.Clone();
+            int tamanho = numerosOrdenados.Length;
+            int mrio = tamanho / 2;
 
-            //calcular a mediuana
-
-            double mediana;
-            int tamanho = array.Length;
-
-            if (tamanho % 2 == 0)
-            {
-                //se o tamanho do array for par
-                int meio1 = tamanho / 2 - 2;
-
-                int meio2 = tamanho / 2;
-
-            }else
-            {
-                //se o tamanho do array for impar
-                int meio = tamanho / 2;
-                mediana = array[meio];
-
-            }
         }
     }
 }
