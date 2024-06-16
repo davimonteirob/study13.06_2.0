@@ -39,6 +39,15 @@ namespace study13._06_2._0
                (numerosOrdenados[meio] + numerosOrdenados[meio - 1]) / 2;
 
             Console.WriteLine($"Com base na amostra a mediana = {mediana}");
+            //uma sintaxe mais simples, porém bem útil no dotnet.
+            int[] valores = { 10,50, 47 ,90 };
+
+            for (int posi = 0; posi < valores.Length; posi++) 
+            {
+                int item = valores[posi];
+                Console.WriteLine(item);
+            }
+
             
         }
     }
